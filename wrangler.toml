@@ -1,0 +1,13 @@
+name = "rff-verify"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# Fill these three (they are not secret). Secrets are added with `wrangler secret put`.
+[vars]
+DISCORD_ID = ""
+GUILD_ID = ""
+VERIFIED_ROLE_ID = ""
